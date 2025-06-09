@@ -18,7 +18,6 @@ class Solution {
             temp=temp.next;
         }
         temp=head;
-        // if(len%2!=0) len=(len/2)-1;
         len=(len/2)-1;
         while(len>0){
             temp=temp.next;
@@ -26,7 +25,8 @@ class Solution {
         }
         temp.next=temp.next.next;
         return head;
-
+        
+        // Second Approach
         // -------------Slow and Fast pointer-------
         // if(head.next==null) return null;
         // ListNode slow =head;
