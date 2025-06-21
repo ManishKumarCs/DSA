@@ -18,7 +18,6 @@ class Solution {
     //         }
     //     }
     //     return sum;
-        
     // }
     public int trap(int[] height) {
         int n = height.length;
