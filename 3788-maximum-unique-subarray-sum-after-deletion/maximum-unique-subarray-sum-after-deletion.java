@@ -5,13 +5,13 @@ class Solution {
         int max=Integer.MIN_VALUE;
         for(int num:nums){
             if(num>0)set.add(num);
-            if(max<num)max=num;
+            max = Math.max(max, num);
         }
+        if(set.isEmpty())return max;
         int ans=0;
         for(int num:set){
             ans+=num;
         }
-        if(set.size()==0)return max;
         return ans;
     }
 }
